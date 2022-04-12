@@ -8,8 +8,8 @@
      time=$(($RANDOM%10))" 11 * * *"
  elif [[ $(date '+%H') == 12 ]];then
      time=$(($RANDOM%10))" 12 * * *"
- elif [[ $(date '+%H') == 15 ]];then
-     time=$(($RANDOM%10))" 15 * * *"
+ elif [[ $(date '+%H') == 13 ]];then
+     time=$(($RANDOM%10))" 13 * * *"
  elif [[ $(date '+%H') == 17 ]];then
      time=$(($RANDOM%5))" 17 * * *"
  elif [[ $(date '+%H') == 19 ]];then
