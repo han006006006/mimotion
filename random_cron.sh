@@ -1,19 +1,19 @@
 #!/bin/zsh
 
- if [[ $(date '+%H') == 00 ]];then
-     time=$(($RANDOM%10))" 2 * * *"
- elif [[ $(date '+%H') == 02 ]];then
-     time=$(($RANDOM%10))" 5 * * *"
- elif [[ $(date '+%H') == 05 ]];then
-     time=$(($RANDOM%10))" 7 * * *"
- elif [[ $(date '+%H') == 07 ]];then
-     time=$(($RANDOM%10))" 9 * * *"
- elif [[ $(date '+%H') == 09 ]];then
-     time=$(($RANDOM%10))" 11 * * *"
+ if [[ $(date '+%H') == 08 ]];then
+     time=$(($RANDOM%10))" 08 * * *"
+ elif [[ $(date '+%H') == 10 ]];then
+     time=$(($RANDOM%10))" 10 * * *"
  elif [[ $(date '+%H') == 11 ]];then
-     time=$(($RANDOM%5))" 13 * * *"
- elif [[ $(date '+%H') == 13 ]];then
-     time=$(($RANDOM%10))" 0 * * *"
+     time=$(($RANDOM%10))" 11 * * *"
+ elif [[ $(date '+%H') == 12 ]];then
+     time=$(($RANDOM%10))" 12 * * *"
+ elif [[ $(date '+%H') == 15 ]];then
+     time=$(($RANDOM%10))" 15 * * *"
+ elif [[ $(date '+%H') == 17 ]];then
+     time=$(($RANDOM%5))" 17 * * *"
+ elif [[ $(date '+%H') == 19 ]];then
+     time=$(($RANDOM%10))" 19 * * *"
  else
      time=$(($RANDOM%10))" 0,2,5,7,9,11,13 * * *"
  fi
