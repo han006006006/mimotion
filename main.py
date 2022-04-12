@@ -101,7 +101,7 @@ def getBeijinTime():
     r = requests.get(url=url, headers=hea)
     if r.status_code == 200:
         result = r.text
-        #print(result)
+        print(result)
         if "nhrs=" + str(time_list[0]) in result:
             a = set_push[0]
             min_1 = min_dict[time_list[0]]
@@ -158,7 +158,7 @@ def getBeijinTime():
             for user_mi, passwd_mi in zip(user_list, passwd_list):
                 msg_mi += main(user_mi,passwd_mi,min_1, max_1)
     else:
-        print("当前不是主人设定的提交步数时间或者主人设置了0步数呢，本次不提交")
+        print("当前不是主人设定的提交步数时间或者主人设置了0步数呢，本次不提交.当前时间为"+r.text+"min:"+min_1+"max:"+max_1)
         return
 
 
