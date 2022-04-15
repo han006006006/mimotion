@@ -17,12 +17,12 @@
  #else
   #   time="5 8,10,11,12,13,17,19 * * *"
  #fi
-if [[ ( $(date '+%H') == 00 ) || ( $(date '+%H') == 02 )  || ( $(date '+%H') == 03 )  || ( $(date '+%H') == 04 )  || ( $(date '+%H') == 05 )  || ( $(date '+%H') == 09 )  || ( $(date '+%H') == 11 ) ]] ;then
+#if [[ ( $(date '+%H') == 00 ) || ( $(date '+%H') == 02 )  || ( $(date '+%H') == 03 )  || ( $(date '+%H') == 04 )  || ( $(date '+%H') == 05 )  || ( $(date '+%H') == 09 )  || ( $(date '+%H') == 11 ) ]] ;then
    time="5 0,2,3,4,5,9,11 * * *"
     echo 当前时间为$(date '+%H')时，计划运行时间$time
     sed -i '/cron:/d' .github/workflows/run.yml
     sed -i '/schedule/a\    - cron: '$time'' .github/workflows/run.yml
     exit 0
-else
-    exit 0
-fi
+#else
+#    exit 0
+#fi
