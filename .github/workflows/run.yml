@@ -31,6 +31,7 @@ jobs:
           
       - name: 开始
         run: |
+          using: 'node16'
           pip3 install requests
           user='${{ secrets.USER }}'
           passwd='${{ secrets.PWD }}'
