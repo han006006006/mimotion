@@ -234,7 +234,7 @@ def main(_user,_passwd,min_1, max_1):
         print("登陆失败！")
         return "login fail!"
 
-    t = get_time()
+    # t = get_time()
 
     app_token = get_app_token(login_token)
 
