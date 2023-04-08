@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout codes
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Update system and install zsh
         run: |
           sudo -E apt-get -qq update
