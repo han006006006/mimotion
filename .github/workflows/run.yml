@@ -25,13 +25,14 @@ jobs:
           sudo -E apt-get install zsh -y
           
       - name: 初始化Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.9.1
           
       - name: 开始
         run: |
-          pip3 install requests
+          pip3 install requests --upgrade pip
+          pip install setuptools wheel twine
           user='${{ secrets.USER }}'
           passwd='${{ secrets.PWD }}'
           skey='${{ secrets.SKEY }}'
