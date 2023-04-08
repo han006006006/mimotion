@@ -27,15 +27,7 @@ jobs:
       - name: 初始化Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11.0
-          
-      - name: Setup Node.js environment
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16   
-      - run: npm ci
-      - run: npm test    
+          python-version: 3.11.0   
           
       - name: 开始
         run: |
